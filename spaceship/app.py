@@ -1,3 +1,5 @@
+print("Name Surname: Vladysalv Popov")
+
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from starlette.responses import FileResponse
@@ -5,7 +7,7 @@ from starlette.responses import FileResponse
 from spaceship.config import Settings
 from spaceship.routers import api, health
 
-
+# Some comment
 def make_app(settings: Settings) -> FastAPI:
     app = FastAPI(
         debug=settings.debug,
